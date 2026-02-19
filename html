@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Website</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bs-primary: #0d6efd;
+        }
+        body { padding-top: 70px; }
+        .hero {
+            background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+            padding: 4rem 0;
+        }
+        .feature-icon {
+            width: 64px; height: 64px; display:flex; align-items:center; justify-content:center;
+            border-radius: .75rem; background: rgba(13,110,253,0.08);
+            font-size: 1.5rem;
+        }
+        footer { padding: 2rem 0; background:#f8f9fa; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BrandName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a class="btn btn-primary ms-lg-3" href="#signup">Get started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold">Build modern websites quickly with Bootstrap</h1>
+                    <p class="lead text-muted">A simple starter template featuring a responsive navbar, hero, features, pricing and contact form—fully responsive and easy to customize.</p>
+                    <div class="mt-4">
+                        <a href="#features" class="btn btn-primary btn-lg me-2">Explore features</a>
+                        <a href="#pricing" class="btn btn-outline-secondary btn-lg">See pricing</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/520x320.png?text=Responsive+Preview" class="img-fluid rounded shadow" alt="Preview">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Features</h2>
+                <p class="text-muted">Everything you need to get started quickly.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex gap-3">
+                            <div class="feature-icon">⚡</div>
+                            <div>
+                                <h5 class="card-title">Fast to build</h5>
+                                <p class="card-text text-muted mb-0">Ready components and utilities let you compose pages rapidly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex gap-3">
+                            <div class="feature-icon">🎨</div>
+                            <div>
+                                <h5 class="card-title">Customizable</h5>
+                                <p class="card-text text-muted mb-0">Easily change colors, spacing, and layout with utility classes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex gap-3">
+                            <div class="feature-icon">📱</div>
+                            <div>
+                                <h5 class="card-title">Responsive</h5>
+                                <p class="card-text text-muted mb-0">Mobile-first design that looks great on any device.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Pricing</h2>
+                <p class="text-muted">Simple and transparent pricing.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic</h5>
+                            <p class="display-6 fw-bold">$0<span class="h6 text-muted">/mo</span></p>
+                            <p class="text-muted">For small projects and testing.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li>Core components</li>
+                                <li>Community support</li>
+                                <li>Basic utilities</li>
+                            </ul>
+                            <a class="btn btn-outline-primary" href="#signup">Choose</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center shadow-sm border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Pro</h5>
+                            <p class="display-6 fw-bold">$9<span class="h6 text-muted">/mo</span></p>
+                            <p class="text-muted">For growing teams and production sites.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li>All Basic features</li>
+                                <li>Premium templates</li>
+                                <li>Email support</li>
+                            </ul>
+                            <a class="btn btn-primary" href="#signup">Get Pro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Signup -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold">Stay in touch</h3>
+                    <p class="text-muted">Sign up for updates or ask a question — we'll get back to you.</p>
+
+                    <form id="signup" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" class="form-control" type="text" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" class="form-control" type="email" required>
+                            <div class="invalid-feedback">Please provide a valid email.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="4"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 border rounded">
+                        <h5 class="mb-3">Contact info</h5>
+                        <p class="mb-1"><strong>Email:</strong> hello@example.com</p>
+                        <p class="mb-1"><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        <p class="mb-0"><strong>Address:</strong> 123 Bootstrap Ave, Web City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0 text-muted">&copy; <span id="year"></span> BrandName. All rights reserved.</p>
+            <div>
+                <a class="text-muted me-3" href="#">Privacy</a>
+                <a class="text-muted" href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // small helpers
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // simple client-side validation
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        event.preventDefault();
+                        // placeholder: handle submission (AJAX or redirect)
+                        alert('Form submitted (demo).');
+                        form.reset();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html> 
